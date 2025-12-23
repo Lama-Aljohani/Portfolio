@@ -133,3 +133,30 @@ body.light-mode .btn-gradient {
   font-size: 180px;
   color: rgba(0, 191, 165, 0.15);
 }
+.carousel img {
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+/* Carousel الصور داخل Projects */
+/* فقط المشروع الأول - الصور الطويلة */
+#mueynCarousel .carousel-item img {
+  width: 100%;
+  height: 300%;      /* يمكن تعديل الارتفاع حسب التصميم */
+  object-fit: cover;  /* يملأ مساحة الصورة بدون تشويه */
+  border-radius: 16px 16px 0 0;
+}
+
+/* المشروع الثاني - يظل كما هو */
+#coopCarousel .carousel-item img {
+  width: 100%;
+  height: 50%;       /* يحافظ على ارتفاع الصورة الطبيعي */
+  object-fit: cover;   /* لا يغير شكل الصورة */
+  border-radius: 16px 16px 0 0;
+}
+
+/* الوضع الفاتح / الداكن */
+body.light-mode #projects .carousel img {
+  border-radius: 16px 16px 0 0;
+}
